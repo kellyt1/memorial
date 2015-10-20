@@ -1,17 +1,15 @@
 package com.memorial
 
-import jdk.nashorn.internal.objects.annotations.Property
-
 class Victim {
 
-    @Property Long id
-    @Property Long version
+     Long id
+     Long version
 
-    @Property String victimFirstName
-    @Property String vicitimLastName
-    @Property String victimAddress
+     String victimFirstName
+     String vicitimLastName
+     String victimAddress
 
-    @Property belongsTo = Memorial
+    static belongsTo = Memorial
 
     static constraints = {
         victimFirstName(nullable:true, blank:true)

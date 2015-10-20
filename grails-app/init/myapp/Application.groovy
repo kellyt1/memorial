@@ -7,9 +7,9 @@ class Application extends GrailsAutoConfiguration {
     static void main(String[] args) {
         GrailsApp.run(Application, args)
 
-        grails.gorm.default.constraints = {
-            myShared(nullable:false, blank:false, size:1..1000)
-        }
+//        static grails.gorm.default.constraints = {
+//            myShared(nullable:false, blank:false, size:1..1000)
+//        }
     }
 
 }
