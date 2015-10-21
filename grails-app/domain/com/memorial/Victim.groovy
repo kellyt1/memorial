@@ -12,7 +12,7 @@ class Victim {
     static belongsTo = Memorial
 
     static constraints = {
-        victimFirstName(nullable:true, blank:true)
+        victimFirstName(nullable:false, blank:false)
         vicitimLastName(nullable:true, blank:true)
         victimAddress(nullable:true,blank:true)
     }

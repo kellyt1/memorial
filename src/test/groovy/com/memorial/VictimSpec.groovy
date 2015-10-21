@@ -1,6 +1,7 @@
 package com.memorial
 
 import grails.test.mixin.TestFor
+import org.junit.Test
 import spock.lang.Specification
 
 /**
@@ -15,8 +16,15 @@ class VictimSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    @Test
+    void "test all constraints on Victim object"() {
+        given:"all required fields are set"
+        Victim victim = new Victim(victimFirstName: "alpha")
+
+        when:"application is validated"
+        victim.validate()
+
+        then:"then no validation errors should be present"
+        assert !victim.hasErrors()
     }
 }
