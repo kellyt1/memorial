@@ -1,8 +1,9 @@
 package com.memorial
 
 import com.sun.jmx.snmp.Timestamp
+import grails.validation.Validateable
 
-class Memorial {
+class Memorial  {
 
      Long id
      Long version
@@ -30,10 +31,11 @@ class Memorial {
         memorialUpdateUser(nullable:false, blank:false, size:1..1000)
         memorialLocation(nullable:false, blank:false, size:1..1000)
         memorialActive(nullable:false)
-        memorialStartDate(date:true)
-        memorialEndDate(date:true)
+        memorialStartDate(nullable:true,date:true)
+        memorialEndDate(nullable:true,date:true)
         memorialCreateTimestamp(timestamp:false)
         memorrialUpdateTimestamp(timestamp:false)
         //victims()
     }
+
 }
