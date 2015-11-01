@@ -78,15 +78,15 @@ task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
 
 }
+task stage(type: Copy, dependsOn: [clean, build]) {
+    from jar.archivePath
+    into project.rootDir 
+    rename {
+        'app.war'
+    }
+}
+stage.mustRunAfter(clean)
 
-apply plugin: 'heroku'
-
-heroku{
-
-apikey '218144a0-c639-4219-8767-56e219e1ba1f'
-
-appName 'memorial'
-
-buildpack 'https://github.com/heroku/heroku-buildpack-gradle'
-
-}  
+clean << {
+    project.file('app.war').delete()
+}
