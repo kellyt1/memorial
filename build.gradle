@@ -1,4 +1,4 @@
-buildscript {
+ buildscript {
     ext {
         grailsVersion = project.grailsVersion
     }
@@ -10,6 +10,7 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath 'com.bertramlabs.plugins:asset-pipeline-gradle:2.5.0'
         classpath "org.grails.plugins:hibernate:4.3.10.5"
+        classpath 'com.wiredforcode:gradle-heroku-plugin:1.0.0'
     }
 }
 
@@ -85,7 +86,7 @@ heroku{
 
 apikey '218144a0-c639-4219-8767-56e219e1ba1f'
 
-appName 'memorial'
+appName 'memorialtk'
 
 buildpack 'https://github.com/heroku/heroku-buildpack-gradle'
 
