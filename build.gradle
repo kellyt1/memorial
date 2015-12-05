@@ -80,6 +80,8 @@ task wrapper(type: Wrapper) {
 
 }
 
+ task stage(dependsOn: ['clean', 'installApp'])
+
 /*apply plugin: 'heroku'
 
 heroku{
