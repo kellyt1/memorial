@@ -1,12 +1,13 @@
 package com.memorial
 
-import com.sun.jmx.snmp.Timestamp
 import grails.test.mixin.TestFor
 import grails.test.mixin.TestMixin
 import grails.test.mixin.support.GrailsUnitTestMixin
 import org.junit.Test
 import org.spockframework.compiler.model.Spec
 import spock.lang.Specification
+
+import java.sql.Timestamp
 
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
