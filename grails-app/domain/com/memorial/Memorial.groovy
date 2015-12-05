@@ -1,7 +1,9 @@
 package com.memorial
 
-import com.sun.jmx.snmp.Timestamp
+
 import grails.validation.Validateable
+
+import java.sql.Timestamp
 
 class Memorial  {
 
