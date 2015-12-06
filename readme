@@ -30,4 +30,6 @@ https://devcenter.heroku.com/articles/buildpacks
 http://www.wiredforcode.com/blog/2014/02/11/deploy-to-heroku-with-gradle
 https://devcenter.heroku.com/articles/renaming-apps
 http://stackoverflow.com/questions/25769536/how-when-to-generate-gradle-wrapper-files
+https://devcenter.heroku.com/articles/dynos#the-dyno-manager
+https://blog.heroku.com/archives/2011/6/20/the_new_heroku_1_process_model_procfile
 
