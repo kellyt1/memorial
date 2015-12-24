@@ -3,8 +3,7 @@ heroku commands
 heroku login
 heroku status
 git push heroku master
-heroku open
-heroku logs 
+heroku open 
 
 started tutoriAL GOOD
 https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction
