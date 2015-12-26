@@ -1,1 +1,1 @@
-web: java $java_opts -war target/*.war
+web: java $java_opts -Dwar target/*.war -Dhttp.port
