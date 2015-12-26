@@ -1,1 +1,1 @@
-web: java $java_opts -p $PORT -war target/*.war
+web: java $java_opts -war target/*.war
