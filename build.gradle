@@ -86,11 +86,11 @@ task wrapper(type: Wrapper) {
 
 
 
-apply plugin: 'heroku'
+//apply plugin: 'heroku'
 
-heroku{
+//heroku{
 
-apikey '218144a0-c639-4219-8767-56e219e1ba1f'
+//apikey '218144a0-c639-4219-8767-56e219e1ba1f'
 
 //appName 'memorialtk'
 
