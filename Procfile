@@ -1,1 +1,1 @@
-web: java $java_opts -Dwar target/memorialtk.war -Dhttp.port
+web: java $java_opts -Dcp target/classes -Dwar target/memorialtk.war -Dhttp.port $port
