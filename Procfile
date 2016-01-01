@@ -1,1 +1,1 @@
-web: java $java_opts -Dcp target/classes:target/dependency/*Main -Dwar target/memorialtk.war -Dhttp.port $port
+web: java $java_opts -Djar target/dependency/jetty-runner.jar -Dwar target/memorialtk.war -Dhttp.port $port
