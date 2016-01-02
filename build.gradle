@@ -37,7 +37,7 @@ apply plugin: 'jetty'
 
 ext {
     grailsVersion = project.grailsVersion
-    gradleWrapperVersion = project.gradleWrapperVersion
+    //gradleWrapperVersion = project.gradleWrapperVersion
 }
 
 assets {
