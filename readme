@@ -5,6 +5,8 @@ heroku status
 git push heroku master
 heroku open
 heroku logs --tails 
+heroku ps
+heroku ps:scale web=1
 
 started tutoriAL GOOD
 https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction
