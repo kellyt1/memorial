@@ -1,1 +1,1 @@
-web: java $java_opts -Djar build/libs/jetty-runner.jar org/mortbay/jetty/runner/Runner -Dwar target/*.war -Dhttp.port $port
+web: java $java_opts -Dcp build/libs/jetty-runner.jar org/mortbay/jetty/runner/Runner -Dwar target/*.war -Dhttp.port $port
