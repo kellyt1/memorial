@@ -33,6 +33,7 @@ apply plugin: "org.grails.grails-web"
 apply plugin: "org.grails.grails-gsp"
 apply plugin: 'java'
 apply plugin: 'jetty'
+apply plugin: 'application'
 
 
 ext {
@@ -90,7 +91,7 @@ dependencies {
 }
 
 task runtimeOnly(type: JavaExec){
-    main = "org.mortbay.jetty.runner.Runner"
+    mainClassName = "org.mortbay.jetty.runner.Runner"
     args = [war.archivePath]
     classpath configurations.runtimeOnly
 }
@@ -117,6 +118,8 @@ task runtimeOnly(type: JavaExec){
          }
      }
  }
+
+
 
 //apply plugin: 'com.android.application'
 

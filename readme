@@ -7,6 +7,8 @@ heroku open
 heroku logs --tails 
 heroku ps
 heroku ps:scale web=1
+gradle wrapper
+gradlew build
 
 started tutoriAL GOOD
 https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction
