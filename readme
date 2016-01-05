@@ -9,6 +9,9 @@ heroku ps
 heroku ps:scale web=1
 gradle wrapper
 gradlew build
+gradle setupbuild
+gradle tasks
+gradle test
 
 started tutoriAL GOOD
 https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction
@@ -51,3 +54,5 @@ https://blog.heroku.com/archives/2011/6/20/the_new_heroku_1_process_model_procfi
 heroku advance
 https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
 
+runners
+main class org.eclipse.jetty.runner.Runner
