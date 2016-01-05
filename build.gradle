@@ -91,7 +91,7 @@ dependencies {
 }
 
 task runtimeOnly(type: JavaExec){
-    mainClassName = "org.mortbay.jetty.runner.Runner"
+    main = "org.mortbay.jetty.runner.Runner"
     args = [war.archivePath]
     classpath configurations.runtimeOnly
 }
@@ -119,6 +119,7 @@ task runtimeOnly(type: JavaExec){
      }
  }
 
+mainClassName = 'main.com.memorial.Memorial'
 
 
 //apply plugin: 'com.android.application'
