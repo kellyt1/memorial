@@ -58,9 +58,9 @@ dependencyManagement {
     applyMavenExclusions false
 }
 
-//configurations{
-//    runtimeOnly
-//}
+configurations{
+    runtimeOnly
+}
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-logging"
@@ -85,16 +85,16 @@ dependencies {
 
     console "org.grails:grails-console"
     // to run our App on Heroku
-   // runtimeOnly "org.mortbay.jetty:jetty-runner:8.1.14.v20131031"
+    runtimeOnly "org.mortbay.jetty:jetty-runner:8.1.14.v20131031"
     // monitoring on Heroku
-   // runtimeOnly "com.newrelic.agent.java:newrelic-agent:2.18.0"
+    runtimeOnly "com.newrelic.agent.java:newrelic-agent:2.18.0"
 }
 
-//task runtimeOnly(type: JavaExec){
-//    main = "org.eclipse.jetty"
-//    args = [war.archivePath]
-//    classpath configurations.runtimeOnly
-//}
+task runtimeOnly(type: JavaExec){
+    main = "org.eclipse.jetty"
+    args = [war.archivePath]
+    classpath configurations.runtimeOnly
+}
 
 //task wrapper(type: DiagnosticCommandImpl.Wrapper) {
 //    gradleVersion = gradleWrapperVersion
