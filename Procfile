@@ -1,1 +1,1 @@
-web: java $java_opts -jar build/libs/jetty-runner.jar build/libs/memorialtk-0.1.war -http.port $port
+web: java $java_opts -jar build/libs/jetty-runner.jar -port $port build/libs/memorialtk-0.1.war 
