@@ -1,1 +1,1 @@
-web: java $java_opts -Dcp build/libs/jetty-runner.jar -Dwar target/*.war -Dhttp.port $port
+web: java $java_opts -Dcp build/libs/jetty-runner.jar -Dhttp.port $port
