@@ -1,1 +1,1 @@
-web: java $java_opts -Dcp build/libs/jetty-runner.jar -Dhttp.port $port
+web: java $java_opts -Djar build/libs/jetty-runner.jar build/libs/memorialtk-0.1.war -Dhttp.port $port
