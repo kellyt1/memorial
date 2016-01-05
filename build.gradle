@@ -91,7 +91,7 @@ dependencies {
 }
 
 task runtimeOnly(type: JavaExec){
-    main = "org.eclipse.jetty"
+    main = "org.eclipse.jetty.runner.Runner"
     args = [war.archivePath]
     classpath configurations.runtimeOnly
 }
