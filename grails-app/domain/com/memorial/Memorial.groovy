@@ -24,7 +24,7 @@ class Memorial  {
      Timestamp memorrialUpdateTimestamp
 
      static relateToMany =  [victims:Victim]
-     Set victims = new HashSet()
+     //Set victims = new HashSet()
 
     static constraints = {
         memorialName(nullable:false,blank:false,unique:true, size:1..1000)
