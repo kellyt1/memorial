@@ -26,9 +26,11 @@ class MemorialSpec extends Specification {
     @Test
     void "Test all constraints on memorial object"() {
         given:
+        def now = new Date()
+        def timeStamp = now.toTimestamp()
         Memorial memorial = new Memorial(memorialName: "alpha",
                 memorialCreateUser: "beta", memorialUpdateUser: "beta", memorialLocation: "address", memorialActive: true,
-                memorialCreateTimestamp: new Timestamp(), memorrialUpdateTimestamp: new Timestamp())
+                memorialCreateTimestamp: timeStamp, memorrialUpdateTimestamp: timeStamp)
 
         when: "memorial name is empty"
         memorial.validate()
@@ -96,7 +98,7 @@ class MemorialSpec extends Specification {
         assert memorial.errors.getFieldError("memorialCreateTimestamp") != null
 
         when: "memorrialUpdateTimestamp is empty"
-        memorial.memorialCreateTimestamp = new Timestamp()
+        memorial.memorialCreateTimestamp = timeStamp
         memorial.memorrialUpdateTimestamp = null
         memorial.validate()
 

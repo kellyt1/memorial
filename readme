@@ -8,7 +8,7 @@ heroku logs --tails
 heroku ps
 heroku ps:scale web=1
 gradle wrapper
-gradlew build
+gradlew build -x test
 gradle setupbuild
 gradle tasks
 gradle test
