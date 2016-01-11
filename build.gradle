@@ -14,6 +14,8 @@ buildscript {
         classpath "org.grails.plugins:hibernate:4.3.10.5"
         classpath 'com.wiredforcode:gradle-heroku-plugin:1.0.0'
         classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.0'
+
     }
 }
 
@@ -33,6 +35,7 @@ apply plugin: "org.grails.grails-web"
 apply plugin: "org.grails.grails-gsp"
 apply plugin: 'java'
 apply plugin: 'jetty'
+apply plugin: 'com.bmuschko.tomcat'
 //apply plugin: 'application'
 
 
@@ -85,13 +88,15 @@ dependencies {
 
     console "org.grails:grails-console"
     // to run our App on Heroku
-    runtimeOnly "org.mortbay.jetty:jetty-runner:8.1.14.v20131031"
+    //runtimeOnly "org.mortbay.jetty:jetty-runner:8.1.14.v20131031"
+    runtimeOnly "com.github.jsimone:webapp-runner:7.0.22"
+
     // monitoring on Heroku
-    runtimeOnly "com.newrelic.agent.java:newrelic-agent:2.18.0"
+   // runtimeOnly "com.newrelic.agent.java:newrelic-agent:2.18.0"
 }
 
 task runtimeOnly(type: JavaExec){
-    main = "org.eclipse.jetty.runner.Runner"
+    main = "webapp.runner.launch.Main"
     args = [war.archivePath]
     classpath configurations.runtimeOnly
 }
