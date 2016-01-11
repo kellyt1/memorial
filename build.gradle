@@ -93,6 +93,7 @@ dependencies {
 
     // monitoring on Heroku
    // runtimeOnly "com.newrelic.agent.java:newrelic-agent:2.18.0"
+    runtimeOnly "com.github.jkutner:tomcat-redis-session:8.0.18.0."
 }
 
 task runtimeOnly(type: JavaExec){
