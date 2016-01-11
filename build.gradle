@@ -89,7 +89,7 @@ dependencies {
     console "org.grails:grails-console"
     // to run our App on Heroku
     //runtimeOnly "org.mortbay.jetty:jetty-runner:8.1.14.v20131031"
-    runtimeOnly "com.github.jsimone:webapp-runner:8.0.30.1"
+    runtimeOnly "com.github.jsimone:webapp-runner:8.0.24.0"
 
     // monitoring on Heroku
    // runtimeOnly "com.newrelic.agent.java:newrelic-agent:2.18.0"
