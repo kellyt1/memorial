@@ -1,1 +1,1 @@
-web: java -jar build/libs/webapp-runner.jar --port 5000 build/libs/memorialtk-0.1.war 
+web: cd build ; java $JAVA_OPTS -Dgrails.env=prod -jar server/webapp-runner-*.jar --expand-war --port $PORT libs/*.war
