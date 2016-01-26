@@ -4,14 +4,23 @@ heroku login
 heroku status
 git push heroku master
 heroku open
-heroku logs --tails 
+heroku logs --tails
+heroku logs --ps web.1 --tail
 heroku ps
 heroku ps:scale web=1
+heroku releases
+heroku releases: rollback version
 gradle wrapper
 gradlew build -x test
 gradle setupbuild
 gradle tasks
 gradle test
+
+
+
+build and test locally
+    gradlew stage
+    heroku local web
 
 started tutoriAL GOOD
 https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction
