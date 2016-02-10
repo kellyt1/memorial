@@ -75,7 +75,6 @@ dependencies {
 
     compile 'org.eclipse.jetty:jetty-runner:9.2.11.v20150529'
     compile 'com.github.jsimone:webapp-runner:7.0.57.2'
-    //runtime "org.grails.plugins:scaffolding"
 }
 
 task wrapper(type: Wrapper) {
@@ -101,3 +100,4 @@ task copyToLib(type: Copy) {
 }
 
 stage.dependsOn(copyToLib)
+

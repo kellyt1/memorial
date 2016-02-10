@@ -40,7 +40,7 @@ class MemorialController {
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'memorial.label', default: 'Memorial'), memorial.id])
-                redirect memorial
+                 redirect memorial
             }
             '*' { respond memorial, [status: CREATED] }
         }
